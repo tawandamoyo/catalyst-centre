@@ -40,7 +40,7 @@
         {
             "label": "News",
             "altText": "News and Insights",
-            "url": "/news",
+            "url": "/blog",
              "icon": null,
             "iconPosition": "right",
             "style": "secondary",
