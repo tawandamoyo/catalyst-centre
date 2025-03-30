@@ -1,34 +1,45 @@
 {
     "logo": {
         "url": "/images/logo-white.svg",
-        "altText": "Logo light",
+        "altText": "The Catalyst Centre Logo - White",
         "type": "ImageBlock"
     },
-    "text": "A description of your brand",
+    "text": "Empowering Africa's youth to lead on climate action and sustainable resource governance.",
     "primaryLinks": {
-        "title": "Product",
+        "title": "Explore",
         "links": [
             {
-                "label": "Features",
-                "altText": "Features page",
-                "url": "/",
-                "icon": "arrowRight",
+                "label": "About Us",
+                "altText": "About The Catalyst Centre",
+                "url": "/about-us",
+                "icon": null,
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Pricing",
-                "url": "/pricing",
-                "icon": "arrowRight",
+                "label": "Our Work",
+                "altText": "Our Programs and Initiatives",
+                "url": "/our-work",
+                 "icon": null,
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Documentation",
-                "url": "/",
-                "icon": "arrowRight",
+                "label": "Impact",
+                "altText": "Our Impact and Results",
+                "url": "/impact",
+                 "icon": null,
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "News & Insights",
+                "altText": "Latest News and Insights",
+                "url": "/news",
+                 "icon": null,
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
@@ -37,21 +48,31 @@
         "type": "FooterLinksGroup"
     },
     "secondaryLinks": {
-        "title": "Company",
+        "title": "Support Us",
         "links": [
-            {
-                "label": "Careers",
-                "altText": "careers page",
-                "url": "/careers",
-                "icon": "arrowRight",
+             {
+                "label": "Donate",
+                "altText": "Donate to The Catalyst Centre",
+                "url": "/support-us#donate",
+                 "icon": null,
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Blog",
-                "url": "/blog",
-                "icon": "arrowRight",
+                "label": "Partner With Us",
+                "altText": "Partner with The Catalyst Centre",
+                "url": "/support-us#partner",
+                 "icon": null,
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "Contact",
+                "altText": "Contact The Catalyst Centre",
+                "url": "/contact",
+                 "icon": null,
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
@@ -60,50 +81,36 @@
         "type": "FooterLinksGroup"
     },
     "socialLinks": [
-        {
-            "altText": "GitHub link",
-            "url": "https://github.com/netlify",
-            "icon": "github",
-            "type": "Social"
-        },
-        {
-            "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
-            "icon": "twitter",
-            "type": "Social"
-        },
-        {
-            "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
+         {
+            "altText": "LinkedIn profile",
+            "url": "https://www.linkedin.com/company/your-linkedin-page",
             "icon": "linkedin",
             "type": "Social"
         },
         {
-            "altText": "Email link",
-            "url": "/",
+            "altText": "Twitter profile",
+            "url": "https://twitter.com/your-twitter-handle",
+            "icon": "twitter",
+            "type": "Social"
+        },
+         {
+            "altText": "Email us",
+            "url": "mailto:info@catalystcentre.org",
             "icon": "mail",
             "type": "Social"
         }
     ],
     "legalLinks": [
         {
-            "label": "Terms",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Privacy",
-            "url": "/",
-            "icon": "arrowRight",
+            "label": "Privacy Policy",
+            "url": "/privacy-policy",
+             "icon": null,
             "iconPosition": "right",
             "style": "secondary",
             "type": "Link"
         }
     ],
-    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)\n",
+    "copyrightText": "© 2025 The Catalyst Centre. All rights reserved.",
     "colors": "bg-dark-fg-light",
     "type": "Footer"
 }

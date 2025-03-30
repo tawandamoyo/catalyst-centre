@@ -1,7 +1,7 @@
 {
     "logo": {
         "url": "/images/logo-dark.svg",
-        "altText": "Logo dark",
+        "altText": "The Catalyst Centre Logo",
         "styles": {
             "self": {
                 "margin": ["mr-3"]
@@ -11,80 +11,59 @@
     },
     "primaryLinks": [
         {
-            "label": "Pricing",
-            "url": "/pricing",
-            "icon": "arrowRight",
+            "label": "About Us",
+            "altText": "About The Catalyst Centre",
+            "url": "/about-us",
+            "icon": null,
             "iconPosition": "right",
             "style": "secondary",
             "type": "Link"
         },
         {
-            "label": "Blog",
-            "altText": "Blog",
-            "url": "/blog",
-            "icon": "arrowRight",
+            "label": "Our Work",
+            "altText": "Our Programs and Initiatives",
+            "url": "/our-work",
+            "icon": null,
+            "iconPosition": "right",
+            "style": "secondary",
+            "type": "Link"
+        },
+         {
+            "label": "Impact",
+            "altText": "Our Impact",
+            "url": "/impact",
+             "icon": null,
             "iconPosition": "right",
             "style": "secondary",
             "type": "Link"
         },
         {
-            "label": "Careers",
-            "altText": "Careers page",
-            "url": "/careers",
-            "icon": "arrowRight",
+            "label": "News",
+            "altText": "News and Insights",
+            "url": "/news",
+             "icon": null,
             "iconPosition": "right",
             "style": "secondary",
             "type": "Link"
-        },
-        {
-            "label": "Dropdown",
-            "altText": "Dropdown",
-            "links": [
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                }
-            ],
-            "labelStyle": "secondary",
-            "type": "SubNav"
         }
     ],
     "secondaryLinks": [
-        {
-            "label": "Sign up",
-            "altText": "Sign up",
-            "url": "https://app.netlify.com/signup",
-            "icon": "arrowRight",
+         {
+            "label": "Donate",
+            "altText": "Donate Now",
+            "url": "/support-us#donate",
+            "icon": null,
             "iconPosition": "right",
-            "style": "secondary",
+            "style": "primary",
             "type": "Button"
         },
         {
-            "label": "Log in",
-            "url": "/",
-            "icon": "arrowRight",
+            "label": "Contact",
+            "altText": "Contact Us",
+            "url": "/contact",
+            "icon": null,
             "iconPosition": "right",
-            "style": "primary",
+            "style": "secondary",
             "type": "Button"
         }
     ],
