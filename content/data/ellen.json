@@ -1,0 +1,29 @@
+{
+    "name": "Ellen Chipunza",
+    "role": "Admin and Finance Director",
+    "image": {
+        "url": "/images/ellen.jpeg",
+        "altText": "Ellen Chipunza",
+        "styles": {
+            "self": {
+                "borderRadius": "medium",
+                "margin": ["mb-8"]
+            }
+        },
+        "type": "ImageBlock"
+    },
+    "colors": "bg-light-fg-dark",
+    "styles": {
+        "self": {
+            "padding": ["pt-6", "pb-6", "pl-6", "pr-6"],
+            "textAlign": "center",
+            "borderColor": "border-neutral",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "borderRadius": "none",
+            "justifyContent": "center"
+        }
+    },
+    "type": "Person",
+    "bio": "Ellen Chipunza is the Admin and Finance Director with a Bachelor's Degree in History from the University of Zimbabwe. She has extensive experience in administration and programming, including roles at ZIMCODD and SAPSN. Ellen is passionate about social and economic justice, driving movement building and program implementation to create a more equal and just world."
+}

@@ -1,0 +1,29 @@
+{
+    "name": "Nqobizitha Mlambo",
+    "role": "Director, Catalyst Centre",
+    "image": {
+        "url": "/images/nqo.jpeg",
+        "altText": "Nqobizitha Mlambo",
+        "styles": {
+            "self": {
+                "borderRadius": "medium",
+                "margin": ["mb-8"]
+            }
+        },
+        "type": "ImageBlock"
+    },
+    "colors": "bg-light-fg-dark",
+    "styles": {
+        "self": {
+            "padding": ["pt-6", "pb-6", "pl-6", "pr-6"],
+            "textAlign": "center",
+            "borderColor": "border-neutral",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "borderRadius": "none",
+            "justifyContent": "center"
+        }
+    },
+    "type": "Person",
+    "bio": "Nqobizitha Mlambo is a development expert with a BSc from the University of Zimbabwe and an MSc from the University of Manchester. He has worked in civil society across Southern Africa (2018-2022), including as Programme Officer for Advocacy at ZIMCODD and leading the SAPSN Youth Network. As Director of Catalyst Centre, he specialises in leadership, donor engagement, and programme implementation."
+}

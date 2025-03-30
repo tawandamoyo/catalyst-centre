@@ -1,0 +1,29 @@
+{
+    "name": "Majory Bayai",
+    "role": "Programs Officer",
+    "image": {
+        "url": "/images/majory.jpeg",
+        "altText": "Majory Bayai",
+        "styles": {
+            "self": {
+                "borderRadius": "medium",
+                "margin": ["mb-8"]
+            }
+        },
+        "type": "ImageBlock"
+    },
+    "colors": "bg-light-fg-dark",
+    "styles": {
+        "self": {
+            "padding": ["pt-6", "pb-6", "pl-6", "pr-6"],
+            "textAlign": "center",
+            "borderColor": "border-neutral",
+            "borderStyle": "solid",
+            "borderWidth": 0,
+            "borderRadius": "none",
+            "justifyContent": "center"
+        }
+    },
+    "type": "Person",
+    "bio": "Majory Bayai is a Programs Officer with a BSc in Sociology from Great Zimbabwe University. She has experience as a Secretary at AquaFire and Safety Company, where she developed strong organizational skills. Passionate about women's empowerment and climate justice, Majory focuses on designing and implementing inclusive climate change programs to support vulnerable communities."
+}
