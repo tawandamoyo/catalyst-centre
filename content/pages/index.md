@@ -4,40 +4,38 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Unblock your team boost your time to production
+      text: Empowering Africa's Youth for a Sustainable Future
       color: text-dark
       type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Leading climate action and sustainable resource governance.
     text: >
-      A Netlify Create website is a git repo that you own. Every code commit is
-      instantly reflected in the visual editor and since every visual edit is a
-      git commit, git workflows and collaboration just work.
+      The Catalyst Centre equips Africa's next generation of leaders to tackle climate change and manage critical minerals sustainably. We empower young people with the knowledge, skills, and platforms to drive development and advocate for equitable resource governance.
     actions:
-      - label: Get started
-        altText: ''
-        url: /
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        elementId: ''
-        type: Button
-      - label: See Tutorials
-        altText: ''
-        url: /
+      - label: Learn More
+        altText: Learn more about The Catalyst Centre
+        url: /about-us # Assumed URL, adjust as needed
         showIcon: true
         icon: arrowRight
         iconPosition: right
         style: primary
         elementId: ''
-        type: Link
+        type: Link # Changed to Link for Learn More
+      - label: Partner With Us
+        altText: Partner with The Catalyst Centre
+        url: /support-us # Assumed URL, adjust as needed
+        showIcon: false
+        icon: arrowRight # Icon kept for consistency, can be removed
+        iconPosition: right
+        style: secondary # Changed style for emphasis
+        elementId: ''
+        type: Button # Changed to Button for Partner With Us
     media:
-      url: /images/main-hero.svg
-      altText: Unblock your team boost your time to production preview
+      url: /images/main-hero.svg # Keeping placeholder image
+      altText: Empowering Africa's Youth for a Sustainable Future preview
       elementId: ''
       type: ImageBlock
     badge:
-      label: This is a badge
+      label: Youth-Led Initiative # More relevant badge
       color: text-primary
       type: Badge
     elementId: ''
@@ -53,21 +51,19 @@ sections:
           - pr-16
   - type: FeaturedItemsSection
     title:
-      text: Key Benefits
+      text: Our Approach
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Subtitle goes here
+    subtitle: Driving transformative change through empowered youth.
     items:
       - type: FeaturedItem
-        title: 500k
-        subtitle: Numbers Done
+        title: Empowerment
+        subtitle: Knowledge & Skills
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          We equip youth with the necessary knowledge and skills to effectively engage with complex climate and resource governance issues.
         actions: []
         elementId: null
         colors: bg-neutralAlt-fg-dark
@@ -84,21 +80,19 @@ sections:
             textAlign: left
         image:
           type: ImageBlock
-          altText: Lightning bolt symbol on red background
+          altText: Empowerment icon
           elementId: ''
-          url: /images/icon1.svg
+          url: /images/icon1.svg # Keeping placeholder image
           styles:
             self:
               borderRadius: x-large
-      - title: 20x
-        subtitle: The Job Stuff
+      - title: Innovation
+        subtitle: Tech & Data Driven
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          Leveraging technology and data-driven solutions to amplify youth voices, influence policy, and promote sustainable practices.
         image:
-          url: /images/icon2.svg
-          altText: Featured icon two
+          url: /images/icon2.svg # Keeping placeholder image
+          altText: Innovation icon
           elementId: ''
           type: ImageBlock
         actions: []
@@ -115,15 +109,13 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: 200%
-        subtitle: Faster
+      - title: Collaboration
+        subtitle: Networks & Action
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          Building robust cross-border networks to foster collective action, knowledge-sharing, and solidarity among Africa's youth movements.
         image:
-          url: /images/icon3.svg
-          altText: Featured icon three
+          url: /images/icon3.svg # Keeping placeholder image
+          altText: Collaboration icon
           elementId: ''
           type: ImageBlock
         actions: []
@@ -139,17 +131,17 @@ sections:
             flexDirection: row
         type: FeaturedItem
     actions:
-      - label: Get started
-        altText: ''
-        url: /
-        showIcon: false
+      - label: Explore Our Programs
+        altText: Explore The Catalyst Centre's Programs
+        url: /our-work # Assumed URL, adjust as needed
+        showIcon: true
         icon: arrowRight
         iconPosition: right
         style: primary
         elementId: ''
         type: Button
     badge:
-      label: This is a badge
+      label: How We Create Impact
       color: text-primary
       styles:
         self:
@@ -168,28 +160,28 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-  - subtitle: Award winning enterprises trust us
-    images:
+  - subtitle: Our Partners & Supporters # Changed subtitle
+    images: # Keeping placeholder images, replace with actual partner logos
       - url: /images/empathy-logo.svg
-        altText: Empathy logo
+        altText: Partner Logo 1
         type: ImageBlock
       - url: /images/wellster-logo.svg
-        altText: Wellster logo
+        altText: Partner Logo 2
         type: ImageBlock
       - url: /images/vise-logo.svg
-        altText: Vise logo
+        altText: Partner Logo 3
         type: ImageBlock
       - url: /images/telus-logo.svg
-        altText: Telus logo
+        altText: Partner Logo 4
         type: ImageBlock
       - url: /images/contenful-logo.svg
-        altText: Contentful logo
+        altText: Partner Logo 5
         type: ImageBlock
       - url: /images/sanity-logo.svg
-        altText: Sanity logo
+        altText: Partner Logo 6
         type: ImageBlock
       - url: /images/rangle-logo.svg
-        altText: Rangle logo
+        altText: Partner Logo 7
         type: ImageBlock
     motion: move-to-left
     colors: bg-light-fg-dark
@@ -199,7 +191,7 @@ sections:
       subtitle:
         textAlign: center
     type: ImageGallerySection
-  - posts:
+  - posts: # Assuming these link to blog posts or news items relevant to the Centre
       - content/pages/blog/case-study-1.md
       - content/pages/blog/case-study-2.md
       - content/pages/blog/case-study-3.md
@@ -218,6 +210,14 @@ sections:
         justifyContent: center
     type: FeaturedPostsSection
     hoverEffect: move-up
+    # Optional: Add Title/Subtitle for this section e.g., "Latest News & Insights"
+    title:
+      text: Latest News & Insights
+      color: text-dark
+      styles:
+       self:
+         textAlign: center
+      type: TitleBlock
   - title: Divider
     colors: bg-light-fg-dark
     styles:
@@ -229,20 +229,17 @@ sections:
           - pr-7
     type: DividerSection
   - title:
-      text: Grow your business 10x faster
+      text: Fostering Youth-Led Climate Innovation
       color: text-dark
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: This is a subtitle
+    subtitle: Supporting young entrepreneurs developing sustainable solutions.
     text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
-    media:
-      title: Title of the video
+      Our climate innovation hubs provide resources and mentorship to empower young African entrepreneurs tackling environmental challenges through groundbreaking projects and startups. See how technology drives our mission.
+    media: # Keeping video placeholder, replace with relevant media
+      title: Youth Innovation in Action
       url: /images/placeholder-video.mp4
       controls: false
       aspectRatio: '16:9'
@@ -262,7 +259,7 @@ sections:
       loop: true
       muted: true
     badge:
-      label: Key Benefits
+      label: Innovation Hubs
       color: text-primary
       styles:
         self:
@@ -276,146 +273,29 @@ sections:
       subtitle:
         textAlign: center
     type: GenericSection
-  - type: GenericSection
-    title:
-      text: Generic section with a video
-      color: text-dark
-      styles:
-        self:
-          textAlign: left
-      type: TitleBlock
-    subtitle: Section with a video subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
-    actions: []
-    media:
-      title: Title of the video
-      url: /images/placeholder-video.mp4
-      autoplay: true
-      loop: true
-      muted: true
-      controls: false
-      aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
-      type: VideoBlock
-    elementId: null
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: row
-        justifyContent: center
-      subtitle:
-        textAlign: left
-  - title:
-      text: Social Media Management
-      color: text-dark
-      type: TitleBlock
-    subtitle: Increase your reach
-    text: >
-      A service that helps businesses to manage their social media accounts and
-      posts.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
-    media:
-      url: /images/hero2.svg
-      altText: Fun feature preview
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        alignItems: center
-    type: GenericSection
-  - title:
-      text: Business Consulting
-      color: text-dark
-      type: TitleBlock
-    subtitle: Be in good company
-    text: >
-      A service that provides advice and guidance to startups and small
-      businesses.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
-    media:
-      url: /images/hero3.svg
-      altText: Dope design preview
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        alignItems: center
-        flexDirection: row-reverse
-    type: GenericSection
-  - title: Divider
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
+  # Removing generic sections or repurposing them if needed.
+  # The original code had multiple generic sections, videos, social media, consulting sections.
+  # These are removed or adapted above. Add back based on specific content needs.
+  # Keep the Testimonial section but adapt the context.
   - type: CarouselSection
-    title: null
-    subtitle: What our customers say about us
-    items:
+    title:
+      text: Voices of Change
+      color: text-dark
+      styles:
+        self:
+         textAlign: center
+      type: TitleBlock # Added title block
+    subtitle: Perspectives from youth leaders and partners. # Changed subtitle
+    items: # Keeping placeholder testimonials, replace with real ones
       - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 1
-        subtitle: 'Maria Walters, Company'
+          “The Catalyst Centre provided the tools and network I needed to advocate effectively for climate justice in my community.”
+        tagline: Youth Leader Perspective # Adjusted tagline
+        subtitle: 'Youth Participant, Country X' # Example
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          Placeholder text describing the impact or experience. Update with genuine testimonials focusing on empowerment, skills gained, or project success.
         image:
           url: /images/person-placeholder-light.png
-          altText: Maria Walters
+          altText: Youth Participant Photo
           styles:
             self:
               borderRadius: full
@@ -435,16 +315,14 @@ sections:
             justifyContent: center
         type: FeaturedItem
       - title: >-
-          "Design is a plan for arranging elements in such a way as best to accomplish a particular purpose."
-        tagline: Testimonial 2
-        subtitle: 'John Doe, Company'
+          "Partnering with The Catalyst Centre amplifies our shared goal of fostering sustainable development led by Africa's youth."
+        tagline: Partner Perspective # Adjusted tagline
+        subtitle: 'Partner Organization Name' # Example
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          Placeholder text describing the value of the partnership. Update with genuine testimonials focusing on collaboration and shared impact.
         image:
-          url: /images/person-placeholder-light.png
-          altText: John Doe
+          url: /images/person-placeholder-light.png # Placeholder
+          altText: Partner Representative Photo
           styles:
             self:
               borderRadius: full
@@ -463,123 +341,7 @@ sections:
             flexDirection: row
             justifyContent: center
         type: FeaturedItem
-      - title: >-
-          "Design is how it works, how it functions. Good design doesn't just make a product aesthetically pleasing, it makes it a pleasure to use."
-        tagline: Testimonial 3
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “A designer knows he has achieved perfection not when there is nothing
-          left to add, but when there is nothing left to take away.”
-        tagline: Testimonial 4
-        subtitle: 'Maria Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          "Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated."
-        tagline: Testimonial 5
-        subtitle: 'Jane Walters, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/person-placeholder-light.png
-          altText: Maria Walters
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-neutralAlt-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
-      - title: >-
-          “Quote from some important person goes right here. I love using Netlify Create.”
-        tagline: Testimonial 6
-        subtitle: 'Jane Doe, Company'
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        image:
-          url: /images/img-placeholder-dark.png
-          altText: Jane Doe
-          styles:
-            self:
-              borderRadius: full
-          type: ImageBlock
-        actions: []
-        colors: bg-dark-fg-light
-        styles:
-          self:
-            padding:
-              - pt-9
-              - pb-9
-              - pl-9
-              - pr-9
-            textAlign: left
-            borderRadius: large
-            flexDirection: row
-            justifyContent: center
-        type: FeaturedItem
+      # Add more relevant testimonials as needed, removing generic ones.
     elementId: null
     variant: next-prev-nav
     colors: bg-light-fg-dark
@@ -588,23 +350,25 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-  - title:
-      text: List of features here
+  # Repurposing the "Featured Items" section for key program areas or impact stats
+  - type: FeaturedItemsSection
+    title:
+      text: Our Key Program Areas
       color: text-primary
       styles:
         self:
           textAlign: center
       type: TitleBlock
-    subtitle: Featured items section subtitle
+    subtitle: Building capacity, advocating for change, and fostering innovation.
     items:
-      - title: Feature Item One
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
+      - title: Leadership Development
+        tagline: Empowering Leaders
+        subtitle: Training & Mentorship
         text: |
-          Follow the tutorial to build your first Netlify Create site.
+          Organizing dynamic leadership training, masterclasses, and mentorship programs tailored for African youth in climate action and resource governance.
         image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder Image
+          url: /images/abstract-feature1.svg # Placeholder
+          altText: Leadership Development Icon
           styles:
             self:
               borderRadius: x-large
@@ -620,14 +384,14 @@ sections:
             borderRadius: x-large
             flexDirection: col
         type: FeaturedItem
-      - title: Feature Item Two
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
+      - title: Advocacy & Networks
+        tagline: Amplifying Voices
+        subtitle: Campaigns & Collaboration
         text: |
-          Follow the tutorial to build your first awesome Netlify Create site.
+          Developing evidence-based advocacy campaigns and building cross-border networks to influence policy and enable collective action.
         image:
-          url: /images/abstract-feature2.svg
-          altText: Placeholder image
+          url: /images/abstract-feature2.svg # Placeholder
+          altText: Advocacy Icon
           styles:
             self:
               borderRadius: x-large
@@ -643,14 +407,14 @@ sections:
             borderRadius: x-large
             flexDirection: col
         type: FeaturedItem
-      - title: Feature Item Three
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
+      - title: Research & Knowledge
+        tagline: Informing Action
+        subtitle: Data & Insights
         text: |
-          Learn from the tutorial and build your first awesome Netlify Create site.
+          Conducting cutting-edge research and creating accessible knowledge repositories to guide youth action, advocacy, and strategy.
         image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder image
+          url: /images/abstract-feature1.svg # Placeholder, using again
+          altText: Research Icon
           styles:
             self:
               borderRadius: x-large
@@ -678,17 +442,15 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-    type: FeaturedItemsSection
-  - title:
-      text: Generic Section With A Form
+  # Optional: Contact Form Section (Keeping structure, adjusting text)
+  - type: GenericSection
+    title:
+      text: Get In Touch
       color: text-dark
       type: TitleBlock
-    subtitle: Section with a form subtitle
+    subtitle: Connect with The Catalyst Centre
     text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+      Have questions or want to explore partnership opportunities? Reach out to us using the form below or through our contact details. We look forward to hearing from you.
     media:
       fields:
         - name: name
@@ -726,7 +488,7 @@ sections:
       type: FormBlock
       submitButton:
         type: SubmitButtonFormControl
-        label: Submit
+        label: Send Message
         showIcon: false
         icon: arrowRight
         iconPosition: right
@@ -737,11 +499,10 @@ sections:
       color: text-primary
       type: Badge
     colors: bg-light-fg-dark
-    type: GenericSection
-seo:
-  metaTitle: Home - Demo site
-  metaDescription: This demo site is built with Netlify Create.
-  socialImage: /images/main-hero.jpg
+seo: # Updated SEO information
+  metaTitle: The Catalyst Centre - Empowering Africa's Youth Leaders
+  metaDescription: The Catalyst Centre is a youth-led non-profit empowering Africa's next generation to lead on climate action and sustainable resource governance.
+  socialImage: /images/main-hero.jpg # Keep or replace placeholder
   type: Seo
 type: PageLayout
 ---
