@@ -20,7 +20,7 @@ seo:
   type: Seo
 colors: bg-light-fg-dark
 type: PostLayout
-author: content/data/person4.json
+author: content/data/ellen.json
 styles:
   self:
     flexDirection: col
