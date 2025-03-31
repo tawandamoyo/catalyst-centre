@@ -18,7 +18,7 @@ seo:
   type: Seo
 colors: bg-light-fg-dark
 type: PostLayout
-author: content/data/nqo.json
+author: content/data/gwaze.json
 styles:
   self:
     flexDirection: col

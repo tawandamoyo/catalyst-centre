@@ -45,6 +45,15 @@
             "iconPosition": "right",
             "style": "secondary",
             "type": "Link"
+        },
+        {
+            "label": "Contact",
+            "altText": "Contact Us",
+            "url": "/contact",
+             "icon": null,
+            "iconPosition": "right",
+            "style": "secondary",
+            "type": "Link"
         }
     ],
     "secondaryLinks": [
