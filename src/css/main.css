@@ -5,257 +5,287 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Color Mapping Assumption (define these in tailwind.config.js):
-primary: Bright Green (#6ECB5F) - Main CTA, links
-secondary: Deep Blue (#2A3A8D) - Headings, dark backgrounds (e.g., footer)
-accent: Gold/Yellow-Orange (#F5A623) - Secondary highlights, potentially hover states
-light: Off-White (#FFFFFF) - Lightest backgrounds
-neutral: Light Grey (#F4F5F7) - Default light backgrounds
-dark: Dark Grey/Charcoal (#4A4A4A) - Body text, secondary elements
-neutralAlt: A slightly different grey (keep if needed, or map to neutral)
+/* Color Mapping Assumption (defined in tailwind.config.js):
+   primary: Bright Green (#6ECB5F) - Main CTA, links
+   secondary: Deep Blue (#2A3A8D) - Headings, dark backgrounds (e.g., footer)
+   accent: Gold/Yellow-Orange (#F5A623) - Secondary highlights, potentially hover states
+   light: Off-White (#FFFFFF) - Lightest backgrounds
+   neutral: Light Grey (#F4F5F7) - Default light backgrounds
+   dark: Dark Grey/Charcoal (#4A4A4A) - Body text, secondary elements
+   neutralAlt: A slightly different grey (#E5E7EB) - Used for card backgrounds, borders
 */
 
 @layer base {
     body {
         /* Apply Lato as the default body font, default text color dark grey */
-        @apply font-body text-dark text-base leading-relaxed; /* Increased default leading */
+        @apply font-body text-dark text-base leading-relaxed antialiased;
     }
-    h1,
-    .h1,
-    h2,
-    .h2,
-    h3,
-    .h3,
-    h4,
-    .h4,
-    h5,
-    .h5,
-    h6,
-    .h6 {
+
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5,
+    h6, .h6 {
         /* Apply Poppins as the heading font, default color deep blue */
-        @apply font-heading font-bold text-secondary break-words; /* Use font-bold for headings */
-        line-height: 1.3; /* Slightly increased heading line-height */
+        @apply font-heading font-bold text-secondary break-words mb-4;
+        line-height: 1.3;
     }
 
-    /* Set base heading sizes (example) - Adjust as needed */
-    h1, .h1 { @apply text-4xl md:text-5xl; }
-    h2, .h2 { @apply text-3xl md:text-4xl; }
-    h3, .h3 { @apply text-2xl md:text-3xl; }
-    h4, .h4 { @apply text-xl md:text-2xl; }
-    h5, .h5 { @apply text-lg md:text-xl; }
-    h6, .h6 { @apply text-base md:text-lg; }
+    /* Consistent heading sizes with responsive adjustments */
+    h1, .h1 { @apply text-4xl font-bold md:text-5xl mb-6; }
+    h2, .h2 { @apply text-3xl font-bold md:text-4xl mb-5; }
+    h3, .h3 { @apply text-2xl font-bold md:text-3xl; }
+    h4, .h4 { @apply text-xl font-bold md:text-2xl; }
+    h5, .h5 { @apply text-lg font-semibold md:text-xl; }
+    h6, .h6 { @apply text-base font-semibold md:text-lg; }
 
-    /* Improve spacing */
     p {
-       @apply mb-4; /* Add default bottom margin to paragraphs */
+       @apply mb-4;
+    }
+
+    /* Base link styling */
+    a {
+       @apply text-primary transition duration-150 ease-in-out;
+       @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:rounded;
+    }
+    a:hover {
+       @apply text-accent underline;
     }
 }
 
 @layer components {
     /* Styling for markdown content */
     .sb-markdown {
-        @apply leading-relaxed; /* Keep relaxed leading for readability */
-        
-        /* Set default link color to primary (Green) */
-        a {
-            @apply text-primary underline transition duration-200 ease-in hover:text-accent; /* Change hover to accent (Gold) */
-        }
-        /* Keep bold and italic styles */
+        @apply leading-relaxed max-w-prose;
+
+        /* Links within markdown inherit base 'a' styles */
+
         b,
         strong {
             @apply font-bold;
         }
+
         em {
             @apply italic;
         }
 
-        /* Adjust spacing for elements within markdown */
+        /* Spacing within markdown */
         * + * {
-            margin-top: 1em; /* Slightly reduced default spacing */
+            margin-top: 1.25em;
         }
+
         h1, h2, h3, h4, h5, h6 {
-            margin-top: 2.5em; /* Adjusted heading top margin */
-            margin-bottom: 1em; /* Added heading bottom margin */
+            margin-top: 2em;
+            margin-bottom: 0.75em;
             &:first-child {
                 margin-top: 0;
             }
         }
+
         h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 {
-            margin-top: 1em; /* Reduced spacing between consecutive headings */
-        }
-        
-        /* Keep list styles */
-        ol {
-            @apply list-decimal;
-            padding-left: 1.5em; /* Slightly increased padding */
             margin-top: 1em;
         }
-        ul {
-            @apply list-disc;
-            padding-left: 1.5em; /* Slightly increased padding */
-             margin-top: 1em;
+
+        ol, ul {
+            @apply pl-5 my-4; /* Combined margin */
         }
-        li > ul, li > ol {
-            margin: 0.5em 0 0 1.5em; /* Indent nested lists */
-        }
-        li + li {
-            margin-top: 0.25rem; /* Reduced space between list items */
+        ol { @apply list-decimal; }
+        ul { @apply list-disc; }
+
+        li > ul,
+        li > ol {
+            margin: 0.5em 0 0 1.25em;
         }
 
-        /* Keep blockquote, pre, hr, table styles - adjust colors if needed */
+        li + li {
+            margin-top: 0.5em;
+        }
+
         blockquote {
-            @apply border-l-4 border-primary pl-4 italic; /* Use primary color for border */
-            font-size: 1.1em; 
-            line-height: 1.5;
-            padding-left: 1em;
-            margin-top: 2em;
-            margin-bottom: 2em;
+            @apply border-l-4 border-primary pl-4 py-2 italic text-lg my-8; /* Combined margin */
         }
-         pre {
-            @apply border border-neutralAlt bg-neutralAlt/30 rounded p-4 overflow-x-auto leading-normal text-sm; /* Style code blocks */
-             margin-top: 2em;
-            margin-bottom: 2em;
+
+        pre {
+            @apply border border-neutralAlt bg-neutral rounded p-4 overflow-x-auto leading-normal text-sm shadow my-8;
         }
+
         hr {
-             @apply bg-neutralAlt border-0 h-px my-8; /* Use neutralAlt for divider */
+            @apply border-t border-neutralAlt my-8;
         }
-         figcaption {
-            @apply text-sm text-dark/70 mt-2 text-center; /* Style image captions */
+
+        figcaption {
+            @apply text-sm text-dark/70 mt-2 text-center;
         }
+
         table {
-             @apply border border-neutralAlt border-collapse text-left w-full my-8; 
+            @apply border border-neutralAlt border-collapse text-left w-full my-8 shadow-sm;
         }
-         caption {
-             @apply text-left text-sm mb-2 text-dark/70; 
+
+        caption {
+            @apply text-left text-sm mb-2 text-dark/70;
         }
-         th, td {
-             @apply border-r border-b border-neutralAlt p-3 align-top; 
+
+        th,
+        td {
+            @apply border border-neutralAlt p-3 align-top;
         }
-         th {
-             @apply font-bold bg-neutral/50; /* Use Poppins bold */
+
+        th {
+            @apply font-bold bg-neutral;
         }
     }
 
     /* Buttons */
     .sb-component-button {
-        /* Base button styles - added padding, font */
-        @apply inline-flex justify-center items-center text-center border font-body font-bold py-2 px-6 rounded shadow-sm transition duration-200 ease-in hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2;
+        @apply inline-flex justify-center items-center text-center border font-body font-bold py-2.5 px-6 rounded-md shadow-sm transition duration-200 ease-in-out;
+        @apply hover:-translate-y-px focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
     }
 
-    /* Links */
+    /* Links (Standalone Component Links) */
     .sb-component-link {
-        @apply inline-flex justify-center items-center text-center font-body font-bold transition duration-200 ease-linear; /* Use bold for standalone links */
+        @apply inline-flex justify-center items-center text-center font-body font-bold transition duration-150 ease-in-out;
+        /* Inherits base 'a' focus style */
     }
+
     .sb-component-link-primary {
-        /* Primary link uses primary color (Green), hovers to accent (Gold) */
         @apply text-primary hover:text-accent hover:underline;
     }
+
     .sb-component-link-secondary {
-         /* Secondary link uses current text color, hovers to primary (Green) */
         @apply text-current hover:text-primary;
     }
 
-    /* Form controls - Minor adjustments */
+    /* Form controls */
     option {
-        color: initial; /* Keep default */
+        color: initial;
     }
-    /* Basic input styling (assuming default Tailwind form plugin is not heavily customized here) */
-    .sb-input, .sb-select, .sb-textarea {
-       @apply block w-full px-3 py-2 border border-neutralAlt rounded shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm;
+
+    .sb-input,
+    .sb-select,
+    .sb-textarea {
+       @apply block w-full px-3 py-2 border border-neutralAlt rounded-md shadow-sm text-base;
+       @apply focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-primary focus:border-primary;
     }
-     .sb-checkbox:checked + .sb-label:before {
+
+    .sb-checkbox:checked + .sb-label:before {
         content: '\2713';
-         @apply inline-block text-primary mr-2; /* Style checkbox tick */
+        @apply inline-block text-primary mr-2 font-bold;
     }
+
     .sb-label {
-       @apply inline-flex items-center;
+       @apply inline-flex items-center cursor-pointer;
     }
 
-
-    /* Image gallery & Carousel - Keep existing structural styles, adjust colors in palette sections */
-     .sb-image-strip-track { min-width: 160rem; }
-     .sb-image-strip-content { min-width: 80rem; }
-     .sb-carousel-dot { @apply w-3 h-3 cursor-pointer rounded-full mx-1; } /* Smaller dots */
-     .sb-carousel-tab-title {
-         @apply cursor-pointer opacity-50 max-w-xs text-sm font-medium; /* Adjusted style */
-         /* Keep text overflow styles */
-         display: -webkit-box; line-height: 1.4; max-height: 2.8em; overflow-y: hidden; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    /* Image gallery & Carousel */
+    .sb-image-strip-track { min-width: 160rem; }
+    .sb-image-strip-content { min-width: 80rem; }
+    .sb-carousel-dot { @apply w-3 h-3 cursor-pointer rounded-full mx-1 transition-colors duration-150; }
+    .sb-carousel-tab-title {
+        @apply cursor-pointer opacity-60 max-w-xs text-sm font-medium transition-opacity duration-150 hover:opacity-100;
+        display: -webkit-box;
+        line-height: 1.4;
+        max-height: 2.8em;
+        overflow-y: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
-     .sb-carousel-tab-title-active { @apply opacity-100; }
+    .sb-carousel-tab-title-active { @apply opacity-100 font-bold; }
 
+    /* Styles for Partner Logo Gallery */
+    .image-gallery-section .sb-component-image-block img {
+        @apply object-contain w-auto h-auto max-h-16 mx-auto; /* Max height 4rem. ADJUST AS NEEDED */
+    }
+    .image-gallery-section .sb-component-image-block {
+       @apply flex items-center justify-center h-full p-2;
+     }
 
-    /* --- Updated Color Palettes --- */
+    /* --- Color Palettes --- */
 
     /* Light Background, Dark Text */
     .bg-light-fg-dark,
     .sb-card.bg-light-fg-dark {
-        @apply text-dark bg-light; /* text-neutral-dark bg-neutral-white */
+        @apply text-dark bg-light;
         .sb-input, .sb-select, .sb-textarea { @apply placeholder-dark/50 border-neutralAlt; }
-        .sb-component-button-primary { @apply bg-primary border-primary text-light hover:bg-primary/90 focus:ring-primary; } /* Green button */
-        .sb-component-button-secondary { @apply border-dark text-dark hover:bg-neutral focus:ring-dark; } /* Dark outline */
+        .sb-component-button-primary { @apply bg-primary border-primary text-light hover:brightness-110 focus-visible:ring-primary; }
+        .sb-component-button-secondary { @apply border-dark text-dark hover:bg-neutral focus-visible:ring-dark; }
         .sb-component-link-secondary { @apply text-dark hover:text-primary; }
-        .sb-image-strip-wrap { &:before, &:after { @apply from-transparent to-light; } } /* Fade matches bg */
-        .sb-divider, .sb-footer-bottom { @apply border-neutral; } /* Light grey divider */
-        .sb-carousel-prev, .sb-carousel-next { @apply bg-dark/80 text-light hover:bg-dark; }
+        .sb-image-strip-wrap { &:before, &:after { @apply from-transparent to-light; } }
+        .sb-divider, .sb-footer-bottom { @apply border-neutral; }
+        .sb-carousel-prev, .sb-carousel-next { @apply bg-dark/70 text-light hover:bg-dark; }
         .sb-carousel-dot { @apply bg-dark/20; }
         .sb-carousel-dot-active { @apply bg-dark; }
-        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { @apply text-secondary; } /* Deep blue headings */
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { @apply text-secondary; }
+        a { @apply text-primary hover:text-accent hover:underline; }
     }
 
     /* Neutral Background, Dark Text */
     .bg-neutral-fg-dark,
     .sb-card.bg-neutral-fg-dark {
-        @apply text-dark bg-neutral; /* text-neutral-dark bg-neutral-light */
+        @apply text-dark bg-neutral;
         .sb-input, .sb-select, .sb-textarea { @apply placeholder-dark/50 border-neutralAlt; }
-        .sb-component-button-primary { @apply bg-primary border-primary text-light hover:bg-primary/90 focus:ring-primary; } /* Green button */
-        .sb-component-button-secondary { @apply border-dark text-dark hover:bg-neutralAlt focus:ring-dark; } /* Dark outline */
-         .sb-component-link-secondary { @apply text-dark hover:text-primary; }
+        .sb-component-button-primary { @apply bg-primary border-primary text-light hover:brightness-110 focus-visible:ring-primary; }
+        .sb-component-button-secondary { @apply border-dark text-dark hover:bg-neutralAlt focus-visible:ring-dark; }
+        .sb-component-link-secondary { @apply text-dark hover:text-primary; }
         .sb-image-strip-wrap { &:before, &:after { @apply from-transparent to-neutral; } }
-        .sb-divider, .sb-footer-bottom { @apply border-neutralAlt; } /* Slightly darker divider */
-        .sb-carousel-prev, .sb-carousel-next { @apply bg-dark/80 text-light hover:bg-dark; }
+        .sb-divider, .sb-footer-bottom { @apply border-neutralAlt; }
+        .sb-carousel-prev, .sb-carousel-next { @apply bg-dark/70 text-light hover:bg-dark; }
         .sb-carousel-dot { @apply bg-dark/20; }
         .sb-carousel-dot-active { @apply bg-dark; }
-        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { @apply text-secondary; } /* Deep blue headings */
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { @apply text-secondary; }
+        a { @apply text-primary hover:text-accent hover:underline; }
+    }
+
+    /* NeutralAlt Background, Dark Text */
+    .bg-neutralAlt-fg-dark,
+    .sb-card.bg-neutralAlt-fg-dark {
+        @apply text-dark bg-neutralAlt;
+        .sb-input, .sb-select, .sb-textarea { @apply placeholder-dark/50 border-neutral; }
+        .sb-component-button-primary { @apply bg-primary border-primary text-light hover:brightness-110 focus-visible:ring-primary; }
+        .sb-component-button-secondary { @apply border-dark text-dark hover:bg-neutralAlt/60 focus-visible:ring-dark; }
+        .sb-component-link-secondary { @apply text-dark hover:text-primary; }
+        .sb-image-strip-wrap { &:before, &:after { @apply from-transparent to-neutralAlt; } }
+        .sb-divider, .sb-footer-bottom { @apply border-dark/10; }
+        .sb-carousel-prev, .sb-carousel-next { @apply bg-dark/70 text-light hover:bg-dark; }
+        .sb-carousel-dot { @apply bg-dark/20; }
+        .sb-carousel-dot-active { @apply bg-dark; }
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { @apply text-secondary; }
+        a { @apply text-primary hover:text-accent hover:underline; }
     }
 
     /* Dark Background (Deep Blue), Light Text */
     .bg-dark-fg-light,
     .sb-card.bg-dark-fg-light {
-        @apply text-light bg-secondary; /* text-neutral-white bg-secondary (Deep Blue) */
-        .sb-input, .sb-select, .sb-textarea { @apply bg-secondary border-light/30 placeholder-light/50 text-light focus:border-light focus:ring-light; } /* Adjust form field contrast */
-        .sb-component-button-primary { @apply bg-primary border-primary text-light hover:bg-primary/90 focus:ring-primary; } /* Green button */
-        .sb-component-button-secondary { @apply border-light text-light hover:bg-light/10 focus:ring-light; } /* Light outline */
-        /* Ensure links are visible */
-        a { @apply text-primary hover:text-accent; } /* Green links */
+        @apply text-light bg-secondary;
+        .sb-input, .sb-select, .sb-textarea { @apply bg-secondary border-light/30 placeholder-light/50 text-light focus:border-light focus:ring-light; }
+        .sb-component-button-primary { @apply bg-primary border-primary text-light hover:brightness-110 focus-visible:ring-primary; }
+        .sb-component-button-secondary { @apply border-light text-light hover:bg-light/10 focus-visible:ring-light; }
+        /* Links need good contrast on dark bg */
+        a { @apply text-primary hover:text-accent hover:underline; } /* Green links stand out */
         .sb-component-link-primary { @apply text-primary hover:text-accent hover:underline; }
-        .sb-component-link-secondary { @apply text-light hover:text-primary; } /* White links */
-        .sb-image-strip-wrap { &:before, &:after { @apply from-transparent to-secondary; } } /* Fade matches bg */
-        .sb-divider, .sb-footer-bottom { @apply border-light/30; } /* Lighter divider */
-        .sb-carousel-prev, .sb-carousel-next { @apply bg-light/80 text-secondary hover:bg-light; } /* Light controls */
+        .sb-component-link-secondary { @apply text-light hover:text-primary; } /* White secondary links */
+        .sb-image-strip-wrap { &:before, &:after { @apply from-transparent to-secondary; } }
+        .sb-divider, .sb-footer-bottom { @apply border-light/30; }
+        .sb-carousel-prev, .sb-carousel-next { @apply bg-light/80 text-secondary hover:bg-light; }
         .sb-carousel-dot { @apply bg-light/30; }
         .sb-carousel-dot-active { @apply bg-light; }
-        /* Headings should be light/white on dark background */
-        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { @apply text-light; }
-    }
-
-    /* Only for cards - NeutralAlt Background */
-    .bg-neutralAlt-fg-dark { /* Assuming neutralAlt is a mid-grey */
-        @apply text-dark bg-neutralAlt;
-        .sb-component-button-primary { @apply bg-primary border-primary text-light hover:bg-primary/90 focus:ring-primary; }
-        .sb-component-button-secondary { @apply border-dark text-dark hover:bg-neutralAlt/60 focus:ring-dark; }
-         h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { @apply text-secondary; } /* Deep blue headings */
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { @apply text-light; } /* Light headings */
     }
 }
 
-/* Keep utility layer and animations */
 @layer utilities {
+    /* Keep existing utilities */
     .underline-line-through { text-decoration-line: underline line-through }
     .sb-animate-slide-left { animation-name: slideLeft; animation-duration: var(--sb-slide-speed, 80s); animation-timing-function: linear; animation-iteration-count: infinite; }
     @keyframes slideLeft { from { transform: translate3d(0,0,0) } to { transform: translate3d(-50%,0,0) } }
     .sb-animate-slide-right { animation-name: slideRight; animation-duration: var(--sb-slide-speed, 80s); animation-timing-function: linear; animation-iteration-count: infinite; }
     @keyframes slideRight { from { transform: translate3d(-50%,0,0) } to { transform: translate3d(0,0,0) } }
 
-    /* Add font family utilities if not defined in theme */
-     .font-body { font-family: 'Lato', sans-serif; }
-     .font-heading { font-family: 'Poppins', sans-serif; }
+    /* Font family utilities */
+    .font-body { font-family: 'Lato', sans-serif; }
+    .font-heading { font-family: 'Poppins', sans-serif; }
+
+    /* Utility for max-width for prose text */
+    .max-w-prose { max-width: 65ch; }
 }
