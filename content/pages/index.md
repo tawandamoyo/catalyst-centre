@@ -162,26 +162,20 @@ sections:
         textAlign: center
   - subtitle: Our Partners & Supporters # Changed subtitle
     images: # Keeping placeholder images, replace with actual partner logos
-      - url: /images/empathy-logo.svg
-        altText: Partner Logo 1
+      - url: /images/walpe.jpeg
+        altText: WALPE logo
         type: ImageBlock
-      - url: /images/wellster-logo.svg
-        altText: Partner Logo 2
+      - url: /images/lti.png
+        altText: LTI logo
         type: ImageBlock
-      - url: /images/vise-logo.svg
-        altText: Partner Logo 3
+      - url: /images/trustafrica.jpeg
+        altText: Trust Africa logo
         type: ImageBlock
-      - url: /images/telus-logo.svg
-        altText: Partner Logo 4
+      - url: /images/ecosocc.jpeg
+        altText: Ecosocc logo
         type: ImageBlock
-      - url: /images/contenful-logo.svg
-        altText: Partner Logo 5
-        type: ImageBlock
-      - url: /images/sanity-logo.svg
-        altText: Partner Logo 6
-        type: ImageBlock
-      - url: /images/rangle-logo.svg
-        altText: Partner Logo 7
+      - url: /images/yiser.jpg
+        altText: YISER logo
         type: ImageBlock
     motion: move-to-left
     colors: bg-light-fg-dark
