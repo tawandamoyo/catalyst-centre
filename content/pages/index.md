@@ -349,12 +349,12 @@ sections:
     subtitle: Perspectives from youth leaders and partners.
     items: # Populate with actual testimonials
       - type: FeaturedItem
-        title: "“The Catalyst Centre provided the tools and network I needed to advocate effectively for climate justice in my community.”"
+        title: "“The Catalyst Centre provided provided ecucation for understanding carbon credits.”"
         tagline: Youth Leader Perspective
-        subtitle: 'Youth Participant, Country X'
-        text: "Placeholder text describing the impact or experience..."
+        subtitle: 'Ali Abdo, Egypt | Board Member'
+        text: "The demand for carbon credits is skyrocketing, opening up a huge chance for small-scale clean energy and other carbon reduction projects in Africa. But, it’s not all sunshine and rainbows. The complexities of carbon markets (high costs, long processes, limited access to finance) can be tough to navigate."
         image:
-          url: /images/person-placeholder-light.png
+          url: /images/abdo.jpeg
           altText: Youth Participant Photo
           styles:
             self:
@@ -376,11 +376,11 @@ sections:
       - type: FeaturedItem
         title: "\"Partnering with The Catalyst Centre amplifies our shared goal of fostering sustainable development led by Africa's youth.\""
         tagline: Partner Perspective
-        subtitle: 'Partner Organization Name'
-        text: "Placeholder text describing the value of the partnership..."
+        subtitle: 'Briggs Bomba, Zimbabwe | Trust Africa'
+        text: "We believe in the power of youth-led initiatives to drive sustainable development. Partnering with The Catalyst Centre amplifies our shared goal of fostering sustainable development led by Africa's youth."
         image:
-          url: /images/person-placeholder-light.png
-          altText: Partner Representative Photo
+          url: /images/briggs.jpeg
+          altText: Briggs Bomba photo
           styles:
             self:
               borderRadius: full
