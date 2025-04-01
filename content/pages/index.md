@@ -340,7 +340,7 @@ sections:
   # --- 7. Voices of Change / Testimonials ---
   - type: CarouselSection
     title:
-      text: Voices of Change
+      text: Sustaining Africa's Future
       color: text-dark
       styles:
         self:
@@ -349,13 +349,13 @@ sections:
     subtitle: Perspectives from youth leaders and partners.
     items: # Populate with actual testimonials
       - type: FeaturedItem
-        title: "“The Catalyst Centre provided provided ecucation for understanding carbon credits.”"
-        tagline: Youth Leader Perspective
-        subtitle: 'Ali Abdo, Egypt | Board Member'
-        text: "The demand for carbon credits is skyrocketing, opening up a huge chance for small-scale clean energy and other carbon reduction projects in Africa. But, it’s not all sunshine and rainbows. The complexities of carbon markets (high costs, long processes, limited access to finance) can be tough to navigate."
+        title: '"Partnering with The Catalyst Centre amplifies our shared goal of fostering sustainable development led by Africa''s youth."'
+        tagline: Partner Perspective
+        subtitle: 'Briggs Bomba, Zimbabwe | Trust Africa'
+        text: "We believe in the power of youth-led initiatives to drive sustainable development. Partnering with The Catalyst Centre amplifies our shared goal of fostering sustainable development led by Africa's youth."
         image:
-          url: /images/abdo.jpeg
-          altText: Youth Participant Photo
+          url: /images/briggs.jpeg
+          altText: Briggs Bomba photo
           styles:
             self:
               borderRadius: full
@@ -374,13 +374,38 @@ sections:
             flexDirection: row
             justifyContent: center
       - type: FeaturedItem
-        title: "\"Partnering with The Catalyst Centre amplifies our shared goal of fostering sustainable development led by Africa's youth.\""
-        tagline: Partner Perspective
-        subtitle: 'Briggs Bomba, Zimbabwe | Trust Africa'
-        text: "We believe in the power of youth-led initiatives to drive sustainable development. Partnering with The Catalyst Centre amplifies our shared goal of fostering sustainable development led by Africa's youth."
+        title: '“The Catalyst Centre provided provided education for understanding carbon credits.”'
+        tagline: Youth Leader Perspective
+        subtitle: 'Ali Abdo, Egypt | Board Member'
+        text: "The demand for carbon credits is skyrocketing, opening up a huge chance for small-scale clean energy and other carbon reduction projects in Africa. But, it’s not all sunshine and rainbows. The complexities of carbon markets (high costs, long processes, limited access to finance) can be tough to navigate."
         image:
-          url: /images/briggs.jpeg
-          altText: Briggs Bomba photo
+          url: /images/abdo.jpeg
+          altText: Ali Abdo photo
+          styles:
+            self:
+              borderRadius: full
+          type: ImageBlock
+        actions: []
+        colors: bg-neutralAlt-fg-dark
+        styles:
+          self:
+            padding:
+              - pt-9
+              - pb-9
+              - pl-9
+              - pr-9
+            textAlign: left
+            borderRadius: large
+            flexDirection: row
+            justifyContent: center
+      - type: FeaturedItem
+        title: '“We need to think of a sustainable Africa”'
+        tagline: Youth Leader Perspective
+        subtitle: 'Bogolo Kenewendo, Botswana | Minister of Minerals and Energy'
+        text: "There is need to think of a sustainable Africa. We need to think of how we can use our resources sustainably and how we can ensure that the next generation has access to these resources."
+        image:
+          url: /images/bogolo.png
+          altText: Bogolo Kenewendo photo
           styles:
             self:
               borderRadius: full
