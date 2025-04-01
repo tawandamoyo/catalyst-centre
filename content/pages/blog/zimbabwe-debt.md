@@ -5,8 +5,8 @@ date: '2025-03-18'
 excerpt: >-
   Zimbabwe’s DEBT crisis is a major hindrance to the establishment of a developmental state. The government must address this issue to ensure sustainable development and economic recovery.
 featuredImage:
-  url: /images/nqo.jpeg
-  altText: Nqobizitha Mlambo
+  url: /images/debt.png
+  altText: Zimbabwe's DEBT Crisis
   type: ImageBlock
   styles:
     self:

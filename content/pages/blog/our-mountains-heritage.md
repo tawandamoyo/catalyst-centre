@@ -5,7 +5,7 @@ date: '2025-03-10'
 excerpt: >-
   Zimbabwe is a country endowed with natural beauty and rich cultural heritage. The mountains are not just geographical features; they are sacred spaces that hold deep spiritual significance for many communities. They are also vital for biodiversity, water catchment areas, and tourism.
 featuredImage:
-  url: /images/nqo.jpeg
+  url: /images/gomo.jpg
   altText: Nqobizitha Mlambo
   type: ImageBlock
   styles:

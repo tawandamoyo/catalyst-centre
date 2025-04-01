@@ -5,7 +5,7 @@ date: '2025-03-06'
 excerpt: >-
   In Zimbabwean government circles and political parties’ programmes/manifestos there is very little attention if any that is placed on the 4th Industrial Revolution (4IR) and the opportunities and risks it presents to this country.
 featuredImage:
-  url: /images/nqo.jpeg
+  url: /images/iot.webp
   altText: Nqobizitha Mlambo
   type: ImageBlock
   styles:
