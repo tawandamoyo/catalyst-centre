@@ -300,9 +300,9 @@ sections:
   # --- 5. Latest News Section ---
   - type: FeaturedPostsSection
     posts:
-      - content/pages/blog/case-study-1.md
-      - content/pages/blog/case-study-2.md
-      - content/pages/blog/case-study-3.md
+      - content/pages/blog/zimbabwe-debt.md
+      - content/pages/blog/our-mountains-heritage.md
+      - content/pages/blog/fourth-industrial-revolution.md
     showThumbnail: true
     showDate: true
     showAuthor: true
