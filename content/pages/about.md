@@ -52,7 +52,7 @@ sections:
       type: TitleBlock
     # Update these file paths when you save the JSON profiles
     people:
-      - content/data/nqo.json
+      - content/data/gwaze.json
       - content/data/ellen.json
       - content/data/majory.json
     variant: three-col-grid
