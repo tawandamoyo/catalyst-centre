@@ -83,13 +83,13 @@
     "socialLinks": [
          {
             "altText": "LinkedIn profile",
-            "url": "https://www.linkedin.com/company/your-linkedin-page",
+            "url": "https://www.linkedin.com/company/the-catalyst-centre",
             "icon": "linkedin",
             "type": "Social"
         },
         {
             "altText": "Twitter profile",
-            "url": "https://twitter.com/your-twitter-handle",
+            "url": "https://twitter.com/catalyst_centre",
             "icon": "twitter",
             "type": "Social"
         },
