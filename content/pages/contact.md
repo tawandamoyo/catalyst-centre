@@ -95,8 +95,6 @@ sections:
          # Center the form block if needed
          alignItems: center
          flexDirection: col
-    # Removed the duplicate 'type: GenericSection' from here
-  # Section for direct contact details
   - title:
       text: Other Ways to Connect
       color: text-dark
@@ -106,32 +104,29 @@ sections:
       type: TitleBlock
     items:
       - title: Email Us
-        subtitle: info@catalystcentre.org # Replace with actual email
+        subtitle: info@catalystcentre.org 
         actions:
           - type: Link
             label: info@catalystcentre.org
-            url: mailto:info@catalystcentre.org # Replace with actual email
-        # Optional: Add mail icon image
+            url: mailto:info@catalystcentre.org 
         colors: bg-neutralAlt-fg-dark
         styles: { self: { padding: [pt-6, pb-6, pl-6, pr-6], textAlign: center, borderRadius: large, flexDirection: col } }
         type: FeaturedItem
       - title: Location
-        subtitle: Harare, Zimbabwe # Keep general unless specific address is public/needed
-        # Optional: Add location icon image
+        subtitle: 67 North Street, Kempton Park, Johannesburg, South Africa
         colors: bg-neutralAlt-fg-dark
         styles: { self: { padding: [pt-6, pb-6, pl-6, pr-6], textAlign: center, borderRadius: large, flexDirection: col } }
         type: FeaturedItem
       - title: Follow Us
         subtitle: Connect on Social Media
-        # Re-add social links here if desired, maybe using simple links or icons
-        actions: # Example social links as actions
+        actions: 
            - type: Link
              label: LinkedIn
-             url: https://www.linkedin.com/company/your-linkedin-page # Replace
-             style: link # Simple link style
+             url: https://www.linkedin.com/company/the-catalyst-centre/
+             style: link 
            - type: Link
              label: Twitter
-             url: https://twitter.com/your-twitter-handle # Replace
+             url: https://x.com/catalyst_centre
              style: link
         colors: bg-neutralAlt-fg-dark
         styles: { self: { padding: [pt-6, pb-6, pl-6, pr-6], textAlign: center, borderRadius: large, flexDirection: col } }
