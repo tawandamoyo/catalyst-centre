@@ -8,7 +8,7 @@ topSections:
       text: Featured Post
       color: text-dark
       type: TitleBlock
-    subtitle: This is the subtitle
+    subtitle: Our latest insights and updates
     posts:
       - content/pages/blog/top-ten-lessons-we-learned.md
     showThumbnail: true
@@ -31,10 +31,9 @@ styles:
   title:
     textAlign: center
 seo:
-  metaTitle: Blog - Demo site
+  metaTitle: Blog - The Catalyst Centre
   metaDescription: >-
-    This is the blog of the demo site where we post about technology, product,
-    and design.
+    The Catalyst Centre blog features insights, stories, and updates on our mission to empower Africa's youth leaders for climate action and sustainable resource governance.
   socialImage: /images/img-placeholder.svg
   type: Seo
 type: PostFeedLayout
