@@ -10,7 +10,7 @@ sections:
       type: TitleBlock
     subtitle: Empower Africa's Next Generation of Leaders
     text: >
-      Your support is crucial in empowering young Africans to lead on climate action and sustainable resource governance[cite: 5]. By contributing to the Catalyst Centre, you invest in a future for Africa that is equitable, environmentally sustainable, and economically just[cite: 5]. Help us provide the knowledge, skills, and platforms needed for transformative change.
+      Your support is crucial in empowering young Africans to lead on climate action and sustainable resource governance. By contributing to the Catalyst Centre, you invest in a future for Africa that is equitable, environmentally sustainable, and economically just. Help us provide the knowledge, skills, and platforms needed for transformative change.
     actions:
       - label: Donate Now
         altText: Donate to The Catalyst Centre
@@ -62,7 +62,7 @@ sections:
       type: TitleBlock
     subtitle: Collaborate for Greater Impact
     text: >
-      We actively seek partnerships with organizations, institutions, and businesses aligned with our mission[cite: 52]. Collaboration is key to scaling our impact, diversifying support[cite: 53], and achieving systemic change. Let's work together to empower Africa's youth and build a sustainable future. Contact us at partnerships@catalystcentre.org (or use the main contact form) to discuss opportunities.
+      We actively seek partnerships with organizations, institutions, and businesses aligned with our mission. Collaboration is key to scaling our impact, diversifying support, and achieving systemic change. Let's work together to empower Africa's youth and build a sustainable future. Contact us at partnerships@catalystcentre.org (or use the main contact form) to discuss opportunities.
     # Optional: Add partner logos here again or examples of partnership types
     colors: bg-light-fg-dark
     styles:
